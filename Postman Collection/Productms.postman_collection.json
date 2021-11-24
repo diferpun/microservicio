@@ -104,6 +104,27 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "https://p29-productms.herokuapp.com/deleteProduct/003",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://p29-productms.herokuapp.com/deleteProduct/003",
+					"protocol": "https",
+					"host": [
+						"p29-productms",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deleteProduct",
+						"003"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
