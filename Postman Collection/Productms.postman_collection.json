@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "69b837e1-b13f-4331-9aaa-d420f2a9c05c",
+		"name": "Productms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://p29-productms.herokuapp.com/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"P-001\",\r\n    \"productName\":\"Anillo de poder\",\r\n    \"description\":\"poder de volar\",\r\n    \"basePrice\":350.55,\r\n    \"category\":\"Habilidad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p29-productms.herokuapp.com/product",
+					"protocol": "https",
+					"host": [
+						"p29-productms",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://p29-productms.herokuapp.com/getProduct/P-001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p29-productms.herokuapp.com/getProduct/P-001",
+					"protocol": "https",
+					"host": [
+						"p29-productms",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"getProduct",
+						"P-001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://p29-productms.herokuapp.com/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p29-productms.herokuapp.com/products",
+					"protocol": "https",
+					"host": [
+						"p29-productms",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://p29-productms.herokuapp.com/updateProduct/P-001",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"productName\": \"Anillo de poder\",\r\n        \"description\": \"Superpoder para volar\",\r\n        \"basePrice\": 375.5,\r\n        \"category\": \"Habilidades\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://p29-productms.herokuapp.com/updateProduct/P-001",
+					"protocol": "https",
+					"host": [
+						"p29-productms",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"updateProduct",
+						"P-001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
